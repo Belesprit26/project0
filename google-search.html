@@ -5,11 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <style>  
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
             h1 {
-                font-size: 30px;
+                font-family: Arial, sans-serif;
+                font-size: 80px;
                 font-weight: bold;
                 text-align: center;
-                padding-top: 80px;
+                padding-top: 50px;
             }
 
             h2 {
@@ -22,21 +27,36 @@
                 text-align: center;
             }
 
+            .input{
+                border-radius: 26px;
+                border: 1px solid rgb(196, 191, 199);
+                padding: 20px; 
+                max-width: 500px;
+                width: 500px;
+                height: 8px; 
+            }
+
             .google{
-                border: none;
-                color: white;
-                padding: 14px 22px;
+               
+                padding: 8px 18px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                transition-duration: 0.4s;
+                font-size: 14px;
+                margin: 4px 4px;
+                transition-duration: 0.1s;
                 cursor: pointer;
                 background-color: white; 
-                color: black; 
-                border: 2px solid #960808;
-                border-radius: 12px;
+                color: #3c4043; 
+                border: 1px solid #dfe1e2;
+                border-radius: 4px;
+                height: 36px;
+            }
+
+            .google:hover {
+                background-color: #eef3f3;
+                color: #3c4043;
+                border: 1px solid rgb(163, 162, 162);
             }
 
             .button {
@@ -44,64 +64,69 @@
                 float: right;
                 border: none;
                 color: white;
-                padding: 16px 32px;
+                padding: 9px 18px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
+                font-size: 13px;
                 transition-duration: 0.4s;
                 cursor: pointer;
                 border-radius: 12px;
             
             }
-
-            .google:hover {
-                background-color: #4CAF50;
-                color: white;
-            }
-
+      
             .button1 {
                 background-color: white; 
-                color: black; 
-                border: 2px solid #4CAF50;
+                color: #313233; 
+                
             }
 
             .button1:hover {
-                background-color: #4CAF50;
-                color: white;
+                color: #313233;
+                text-decoration: underline;
+            
             }
 
             .button2 {
                 background-color: white; 
-                color: black; 
-                border: 2px solid #008CBA;
+                color: #313233; 
             }
 
             .button2:hover {
-                background-color: #008CBA;
-                color: white;
+                color: #313233;
+                text-decoration: underline;
             }
 
-            @media all and (max-width:30em){
-                .button{
-                display:block;
-                margin:0.4em auto;
-                }
+            .wFncld {
+                margin-top: 3px;
+                color: #9aa0a6;
+                height: 20px;
+                width: 20px;
+            }
+
+            .z1asCe {
+                display: inline-block;
+                fill: currentColor;
+                line-height: 24px;
+                position:relative;
             }
 
         </style>
     </head>
     <body>
+        <a class="button button2" href="file:///C:/Users/Rhuli%20Mkhatshwa/Desktop/Harvard/project0/advanced-searchs.html">Advanced Search</a>
+        <a class="button button1" href="file:///C:/Users/Rhuli%20Mkhatshwa/Desktop/Harvard/project0/google-images.html">Image Search</a>
+        
 
-        <a class="button button1" href="file:///C:/Users/Rhuli%20Mkhatshwa/Desktop/Harvard/Project%200/google-image.html">&laquo; Image Search</a>
-        <a class="button button2" href="file:///C:/Users/Rhuli%20Mkhatshwa/Desktop/Harvard/Project%200/advanced-search.html">Advanced Search &raquo;</a>
-
-        <h1>Simply Search</h1>
-        <h2>(Google Search)</h2>
+        <h1>Google</h1>
         
         <form action="https://google.com/search">
-            <input type="text" name="q">
+            <span class="wFncld z1asCe MZy1Rb">
+                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+            </span>
+            <input class="input" type="text" name="q"><br><br>
             <input class="google" type="submit" value="Google Search">
         </form>
 
