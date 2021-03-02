@@ -4,22 +4,34 @@
         <title>Advnaced Search</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-
             h1 {
                 font-size: 30px;
-                font-weight: bold;
-                text-align: center;
-                padding-top: 80px;
+                font-weight: normal;
+                text-align: left;
+                padding-top: 10px;
+                background-color: rgba(220, 216, 216, 0.864);
             }
 
             h2 {
-                margin-bottom: 100px;
-                font-weight: bold;
-                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                margin-left: 40px;
+                margin-bottom: 80px;
+                font-weight:normal;
+                text-align: left;
+                color:rgb(220, 20, 30);
+            }
+
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                color: rgb(49, 48, 48);
+                margin-left: 40px;
+
             }
 
             form {
-                text-align: center;
+                text-align: left;
             }
 
             .input {
@@ -79,35 +91,38 @@
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
+                font-size: 13px;
                 transition-duration: 0.4s;
                 cursor: pointer;
+                border-radius: 12px;
                 
             }
 
             .button1 {
                 background-color: white; 
-                color: black; 
-                border: 2px solid #960808;
+                color: #313233;
             }
 
             .button1:hover {
-                background-color: #960808;
-                color: white;
+                color: #313233;
+                text-decoration: underline;
             }
 
         </style>
     </head>
     <body>
-
-        <a class="button button1" href="file:///C:/Users/Rhuli%20Mkhatshwa/Desktop/Harvard/project0/google-search.html">&laquo; Simply Search</a>
+        <a class="button button1" href="file:///C:/Users/Rhuli%20Mkhatshwa/Desktop/Harvard/project0/google-search.html">Google Search</a>
        
-        <h1>Advanced Search</h1>
-        <h2>(Advanced Google Search)</h2>
-
+        <div class="header">
+            <h1><img src="GoogleLogo.jpg" alt="Cloud" width=100 text-align="center"></h1>
+          </div>
+        <h2>Advanced Search</h2>  
+        <h3>Find pages with. . .</h3>
         <form action="https://www.google.com/advanced_search">
-            <input class="input" type="text" name="q"><br><br>
+            <input class="input" type="text" name="as_q"><br><br>
+            <input class="input" type="text" name="as_q"><br><br>
+            <input class="input" type="text" name="as_q"><br><br>
+            <input class="input" type="text" name="as_q"><br><br>
             <input class="google" type="submit" value="Advanced Search">
         </form>
     </body>

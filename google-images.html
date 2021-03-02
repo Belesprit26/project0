@@ -9,42 +9,47 @@
                 font-size: 30px;
                 font-weight: bold;
                 text-align: center;
-                padding-top: 80px;
+                padding-top: 150px;
             }
 
-            h2 {
-                margin-bottom: 100px;
-                font-weight: bold;
-                text-align: center;
-            }
 
             form {
                 text-align: center;
             }
 
-            .input1{
-                border-radius: 15px;
-                border: 1px solid rgb(101, 99, 102);
+            .input{
+                border-radius: 26px;
+                border: 1px solid rgb(196, 191, 199);
                 padding: 20px; 
-                width: 600px;
-                height: 10px; 
+                max-width: 500px;
+                width: 500px;
+                height: 8px; 
             }
 
-            .google {
-                border: none;
-                color: white;
-                padding: 10px 18px;
+            .input:hover {
+                box-shadow: 1px 1px 1px 1px rgba(121, 119, 119, 0.2), 1px 1px 1px 1px rgba(121, 120, 120, 0.19);
+            }
+
+            .google1 {
+                padding: 8px 18px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 12px;
-                margin: 4px 2px;
-                transition-duration: 0.4s;
+                font-size: 14px;
+                margin: 4px 4px;
+                transition-duration: 0.1s;
                 cursor: pointer;
                 background-color: white; 
-                color: black; 
-                border: 2px solid #0864af;
-                border-radius: 12px;
+                color: #3c4043; 
+                border: 1px solid #dfe1e2;
+                border-radius: 4px;
+                height: 36px;
+            }
+
+            .google1:hover {
+                background-color: #eef3f3;
+                color: #3c4043;
+                border: 1px solid rgb(163, 162, 162);
             }
 
             .button {
@@ -56,42 +61,38 @@
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
+                font-size: 13px;
                 transition-duration: 0.4s;
                 cursor: pointer;
                 border-radius: 12px;
             
             }
 
-            .google-i:hover {
-                background-color: #4CAF50;
-                color: white;
-            }
 
             .button1 {
                 background-color: white; 
-                color: black; 
-                border: 2px solid #960808;
+                color: #313233;
             }
 
             .button1:hover {
-                background-color: #960808;
-                color: white;
+                color: #313233;
+                text-decoration: underline;
             }
+
 
         </style>
     </head>
     <body>
 
-        <a class="button button1" href="file:///C:/Users/Rhuli%20Mkhatshwa/Desktop/Harvard/project0/google-search.html">&laquo; Simply Search</a>
+        <a class="button button1" href="file:///C:/Users/Rhuli%20Mkhatshwa/Desktop/Harvard/project0/google-search.html">Google Search</a>
        
-        <h1>Image Search</h1>
-        <h2>(Google Image Search)</h2>
+        <h1><img src="GoogleLogo.jpg" alt="Cloud" width=300 text-align="center"></h1>
 
-        <form method="get" action="https://images.google.com/images">
-            <input class="input1 type="text" name="q"><br><br>
-            <input class="google" type="submit" value="Google Image Search">
+        <form method="get" class="example" action="https://images.google.com/images">
+            <input class="input type="text" name="q"><br><br>
+            <p><input class="google1" type="submit" value="Google Search"></p>
         </form>
+
     </body>
 </html>
+
