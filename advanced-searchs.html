@@ -38,6 +38,7 @@
 
             }
 
+
             .input {
                 font-size: 13px;
                 border-radius: 2px;
@@ -68,12 +69,10 @@
                 color: #fff;
                 text-align: center;
                 text-decoration: none;
-                display: inline-block;
+                float:right;
                 font-size: 11px;
                 font-weight: bold;
-                margin-right: 16px;
                 transition-duration: 0.4s;
-                cursor: pointer;
                 background-color:#4d90fe; 
                 background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
                 color: #fff; 
@@ -82,11 +81,14 @@
                 line-height:27px;
                 height:30px;
                 min-width: 120px;
+                max-width: 130px;
                 padding: 0 12px;
+                margin-top: 10px;
             
             }
 
             .google:hover {
+                float: right;
                 color: white;
                 background-color:#196ef8; 
                 background-image: -moz-linear-gradient(top,#1f75ff,#3472d6);
@@ -116,7 +118,7 @@
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
-                font-size: 15px;
+                font-size: 14px;
                 transition-duration: 0.4s;
                 cursor: pointer;
                 border-radius: 12px;
@@ -158,16 +160,18 @@
         <h2>Advanced Search</h2>  
         <h3>Find pages with...</h3>
 
-                    <form action="https://www.google.com/advanced_search">
+                    <form action="https://www.google.com/search?as_q=">
                         <label for="all">all these words:</label>
-                        <input class="input" type="text" name="as_q">
+                        <input class="input" type="text" name="as_q" action="https://www.google.com/search?as_q">
                         <label for="exact">this exact word or phrase:</label>
-                        <input class="input" type="text" name="as_q">
+                        <input class="input" type="text" name="as_epq" action="https://www.google.com/search?as_epq">
                         <label for="any">any of these words:</label>
-                        <input class="input" type="text" name="as_q">
+                        <input class="input" type="text" name="as_oq" action="https://www.google.com/search?as_oq">
                         <label for="none">none of these words:</label>
-                        <input class="input" type="text" name="as_q">
+                        <input class="input" type="text" name="as_eq" action="https://www.google.com/search?as_eq">
+                        <label type="text"></label>
                         <input class="google" type="submit" value="Advanced Search">
                     </form>
     </body>
 </html>
+

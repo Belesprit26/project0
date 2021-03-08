@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Simple Search</title> 
+        <title>Google Search</title> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <style>  
 
@@ -45,9 +45,9 @@
                 margin: 4px 4px;
                 transition-duration: 0.1s;
                 cursor: pointer;
-                background-color: white; 
+                background-color: #f8f9fa; 
                 color: #3c4043; 
-                border: 1px solid #dfe1e2;
+                border: 1px solid #f8f9fa;
                 border-radius: 4px;
                 height: 36px;
             }
@@ -55,7 +55,31 @@
             .google:hover {
                 background-color: #eef3f3;
                 color: #3c4043;
-                border: 1px solid rgb(163, 162, 162);
+                border: 1px solid rgb(220, 220, 220);
+                border-radius: 4px;
+            }
+
+            .lucky{
+                padding: 8px 18px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                margin: 4px 4px;
+                transition-duration: 0.1s;
+                cursor: pointer;
+                background-color: #f8f9fa; 
+                color: #3c4043; 
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                height: 36px;
+            }
+
+            .lucky:hover{
+                background-color: #eef3f3;
+                color: #3c4043;
+                border: 1px solid rgb(220, 220, 220);
+                border-radius: 4px;
             }
 
             .button {
@@ -96,19 +120,6 @@
                 text-decoration: underline;
             }
 
-            .wFncld {
-                margin-top: 3px;
-                color: #9aa0a6;
-                height: 20px;
-                width: 20px;
-            }
-
-            .z1asCe {
-                display: inline-block;
-                fill: currentColor;
-                line-height: 24px;
-                position:relative;
-            }
 
         </style>
     </head>
@@ -120,10 +131,11 @@
         <h1><img src="GoogleLogo.jpg" alt="Cloud" width=300 text-align="center"></h1>
 
         <form action="https://google.com/search">
-          
             <input class="input" type="text" name="q"><br><br>
-            <input class="google" type="submit" value="Google Search">
+            <input class="google" type="submit" value="Google Search" name="btnG">
+            <input class="lucky" type="submit" value="I'm Feeling Lucky" name="btnI" jsaction="trigger.kWlhxc">
         </form>
-
     </body>
 </html>
+
+
